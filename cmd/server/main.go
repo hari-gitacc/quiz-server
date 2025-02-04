@@ -47,9 +47,9 @@ func main() {
         &models.Question{},
         &models.Option{},
         &models.UserQuizResponse{},
-        &models.UserQuizProgress{}, // <-- Add this line
+        &models.UserQuizProgress{},
+        &models.QuizParticipant{},  // Add this line
     )
-    
     if err != nil {
         log.Fatalf("Failed to migrate database: %v", err)
     }
